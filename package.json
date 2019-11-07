@@ -2,15 +2,20 @@
   "name": "react-form-wpartners",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gandalfmza.github.io/react-form-wpartners",
   "dependencies": {
     "classnames": "^2.2.5",
-    "react-motion": "^0.5.2",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-motion": "^0.5.2",
+    "react-scripts": "3.2.0",
+    "yarn": "^1.19.1"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
