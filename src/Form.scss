@@ -1,0 +1,318 @@
+.partner-form-wrapper{
+    min-width: 350px;
+    margin: 45px auto;
+    background: white;
+
+   .form-wrapper {
+
+       .partner-form-logo-wrapper{
+           width: 140px;
+           display: inline-block;
+           margin-right: 30px;
+           .partner-form-logo {
+               width: 100%;
+           }
+       }
+        .form-title{
+            padding: 30px 43px;
+            h3{
+                margin-bottom: 5px;
+            }
+            .partners-warning-title {
+                font-family: 'Myriad Pro';
+                font-style: italic;
+                font-size: 14px;
+                color: #FFC11F;
+                line-height: 18px;
+                font-weight: 600;
+            }
+        }
+
+        .form-partners-wrapper {
+            padding-bottom: 18px;
+            
+            .labels-wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                border-top: 1px solid #DDDDDD;
+                border-bottom: 1px solid #DDDDDD;
+                padding: 23px 43px;
+                .warning-dni{
+                    margin-top: 12px;
+                    margin-bottom: 6px;
+                    font-size: 15px;
+                }
+                span.partner-form-warning {
+                    font-family: 'Myriad Pro';
+                    font-size: 13px;
+                    text-align: right;
+                    font-style: italic;
+                    letter-spacing: -0.6px;
+                    width: 100%;
+                    position: relative;
+                    top: 0;
+                    color: red;
+                    transition: all 0.4s;
+                    min-height: 19px;
+                    &.hide {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .section-partners-send{
+            background-color: #F5F8FD;
+        }
+
+        .partners-id_wrapper {
+            display: inline-flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        button.terms-button {
+            width: 100%;
+            max-width: 253px;
+            height: 35px;
+            font-family: 'Myriad Pro Light';
+            background: #ECEDEF;
+            font-size: 16px;
+            margin: 13px;
+            padding: 10px;
+            border: 0;
+            border-radius: 5px;
+            transition: all 0.25s;
+            cursor: pointer;
+            &:hover {
+                background: #dadcdf;
+            }
+        } 
+        .terms-wrapper {
+            &.error {
+                span {
+                    border-bottom: 1px solid red;
+                }
+                .terms-check {
+                    border-color: red;
+                    box-shadow: 0px 0px 4px red;
+                }
+            }
+            span {
+                font-family: 'Myriad Pro Light';
+                font-size: 13px;
+                color: #000000;
+                line-height: 16px;
+                cursor: pointer;
+                text-align: center;
+            }
+        }
+
+        p.email-footnote {
+            font-family: 'Myriad Pro';
+            font-style: italic;
+            font-size: 15px;
+            color: #666666;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: -0.7px;
+        }
+
+        p.api-error {
+            margin: 9px 0;
+            font-family: 'Myriad Pro';
+            font-size: 16px;
+            width: 100%;
+            color: red;
+            font-style: italic;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        p.partners-inconvinients {
+            font-family: 'Myriad Pro';
+            font-size: 12px;
+            width: 100%;
+            color: red;
+            font-style: italic;
+            text-align: center;
+            margin: 8px 0px 0px 0px;
+        }
+
+        .terms-check {
+            width: 11px;
+            height: 11px;
+            display: inline-block;
+            border: 1px solid #979797;
+            margin-right: 10px;
+            .checkmark:after {
+                content: '';
+                display: block;
+                width: 4px;
+                height: 6px;
+                border: solid #000;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+
+        .partners-send {
+            width: 100%;
+            max-width: 398px;
+            background-color: #017CC7;
+            color: white;
+            height: 46px;
+            border: 0;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Myriad Pro';
+            font-weight: bold;
+            padding: 14px;
+            margin: 16px;
+            transition: all 0.25s;
+            cursor: pointer;
+            &:hover {
+                background: #2D60A0;
+            }
+            &.blocked {
+                background: grey;
+            }
+        }
+
+    }
+
+}
+
+.partner-form-wrapper--main{
+    width: 66%;
+    max-width: 1100px;
+}
+
+
+
+/* Mobile */
+
+@media only screen and (max-width:640px) {
+    .partner-form-wrapper .form-wrapper {
+        padding: 25px 0 0!important;
+        .form-title,
+        .form-partners-wrapper {
+            padding: 0 28px;
+        }
+
+        .form-title{
+            padding: 8px 27px;
+            .partner-form-logo-wrapper{
+                width: 100px;
+                margin-bottom: 25px;
+            }
+            h3{
+                margin-bottom: 11px;
+                font-size: 17px;
+                line-height: 20px;
+            }
+            .partners-warning-title {
+                margin-bottom: 8px;
+            }
+        }
+
+        .form-partners-wrapper {
+            .labels-wrapper{
+                border-top: none;
+                padding: 18px 0px;
+                span.warning-dni{
+                    font-size: 12px;
+                    letter-spacing: 0px;
+                }
+            }
+        }
+
+        button.terms-button {
+            height: 30px;
+            width: 100%;
+            max-width: none;
+            padding: 8px;
+            border-radius: 5px;
+            margin: 10px 0px 10px 0px;
+            font-size: 13px;
+        }
+
+        .terms-wrapper {
+            display: flex;
+            align-items: center;
+            margin:auto;
+            margin-top: 9px;
+            margin-bottom: 19px;
+            .terms-check {
+                width: 12px;
+                height: 12px;
+                border: 1px solid #979797;
+                .checkmark:after {
+                    width: 5px;
+                    height: 10px;
+                }
+            }
+            span {
+                font-size: 12px;
+                line-height: 12px;
+                text-align: center;
+            }
+        }
+
+        p.email-footnote {
+            font-size: 13px;
+            font-style: italic;
+            line-height: 15px;
+            text-align: left;
+            letter-spacing: 0px;
+            margin-top: 9px;
+            margin-bottom: 4px;
+        }
+
+        p.partners-warning-title {
+            font-size: 9px;
+            line-height: 11px;
+        }
+
+        .partner-form-logo {
+            width: 101px;
+            height: 35px;
+        }
+        .section-partners-send{
+            background-color: #FFFFFF;
+            
+            .partners-send {
+                width: calc(100% - 50px);
+                background: #017CC7;
+                color: white;
+                height: 46px;
+                padding: 0px;
+                margin: 0 auto;
+                border: 0;
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 23px;
+                display: block;
+                cursor: pointer;
+                transition: all 0.25s;
+                &.blocked {
+                    background: grey;
+                }
+            }
+        }
+    }
+
+
+    .partner-form-wrapper.partner-thanks {
+        .form-wrapper {
+            padding: 25px 0 0!important;
+        }
+    }
+    .partner-form-wrapper--main{
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,93 @@
+.partner-form-wrapper--thanks {
+    width: 515px;
+    background: white;
+    margin: 25% 0%;
+    .partners-thanks-send {
+        display: block;
+        width: 100%;
+        background-color: #017CC7;
+        height: 62px;
+        text-align: center;
+        font-family: 'Myriad Pro';	
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 23px;
+        color: #FFFFFF;
+        border: 0;
+        padding: 20px;
+        cursor: pointer;
+        &:hover {
+            background: #2d60a0!important;
+        }
+    }
+
+    .partner-thanks-header{
+        padding: 50px 7%;
+    }
+    .partner-thanks-text {
+        padding: 0px 7% 43px 7%;
+    }
+    .partner-thanks-text {
+        font-family: 'Myriad Pro Light';
+        font-size: 20px;
+        line-height: 24px;
+        color: #323232;
+        .gracias {
+            font-size: 31px;
+            line-height: 24px;
+            margin-bottom: 21px;
+            color: #017CC7;
+        }
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .partner-form-wrapper--thanks {
+        width: 100vw;
+        max-width: 400px;
+        min-height: 70vh;
+        margin: 0px;
+        padding: 10px 6%;
+
+        .form-wrapper {
+            padding: 27px;
+            .form-title {
+                padding: 0 25px!important;
+            }
+
+            .partner-thanks-header{
+                padding: 0%;
+            }
+            .partner-thanks-text {
+                padding: 8%;
+            }
+            .partner-thanks-text {
+                font-size: 13px;
+                line-height: 16px;
+                margin-bottom: 12px;
+                    
+                .gracias {
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 6px;
+                }
+            }
+        }
+        .partners-thanks-send {
+            width: calc(100% - 50px)!important;
+            height: 46px;
+            line-height: 23px;
+            font-size: 18px;
+            border-radius: 3px;
+            margin: 0 auto;
+            display: block!important;
+            padding: 15px!important;
+            height: auto!important;
+            cursor: pointer;
+
+            &:hover {
+                background: #2d60a0!important;
+            }
+        }
+    }
+}

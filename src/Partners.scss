@@ -1,0 +1,94 @@
+.reset-button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    text-align: inherit;
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+.center{
+    text-align: center;
+}
+.inline-block{
+    display: inline-block;
+}
+.bold{
+    font-size: bold;
+}
+strong{
+    font-weight:bold;
+}
+
+body.partners {
+    :focus {
+        outline: transparent;
+    }
+    .u-center{
+        width: 100%;
+    }
+
+    div#ajaxBusy {
+        &.show {
+            display: block!important;
+        }
+    }
+
+    .content {
+        padding-bottom: 0;
+    }
+
+    .main {
+        background: url(/arquivos/partners-bg.jpg) center no-repeat; // height: 100vh;
+        // min-height: 1000px;
+        background-size: cover;
+
+        h3 {
+            font-family: 'Myriad Pro Light';
+            font-size: 22px;
+            line-height: 27px;
+            color: #323232;
+        }
+
+        .u-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width:640px) {
+    body.partners {
+        .main {
+            background: none;
+            margin-bottom: 25px;
+
+            h3 {
+                font-size: 16px;
+                line-height: 18px;
+            }
+
+            #partners-form {
+                margin: 0!important;
+            }
+        }
+    }
+}
